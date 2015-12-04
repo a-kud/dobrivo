@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700,400,300|Roboto:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Нано-удобрение Добриво</title>     
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/helper.js"></script>    
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slideshow.js"></script>
+    
+    <div id="background" class="container">
+        <div class="slideshow"></div>        
+    </div>
+    <div id="main_container" class="container">
+        <div class="row">
+            <div class="col-md-3"><h1>ДОБРИВО</h1></div>
+            <div class="col-md-8 submenu">                
+                <ul>
+                    <li>ОПЛАТА И ДОСТАВКА</li>
+                    <li>НОВОСТИ</li>
+                    <li>СПРАВОЧНИК</li>
+                    <li>СЕРТИФИКАТЫ</li>
+                </ul>                
+            </div>
+            <div id="lang" class="col-md-1">                
+                <select id="langswitch">
+                    <option>RU</option>
+                    <option>UA</option>
+                    <option>EN</option>
+                </select>
+            </div>           
+        </div>
+        <!-- navbar -->
+        <nav id="navbar_main" class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">НАГРО-УДОБРЕНИЕ <span class="caret right"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Ссылка 1</a></li>
+                                <li><a href="#">Ссылка 2</a></li>
+                            </ul>                            
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+                            aria-haspopup="true" aria-expanded="false">БИОДИЗЕЛЬ <span class="caret right"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Ссылка 1</a></li>
+                                <li><a href="#">Ссылка 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+                            aria-haspopup="true" aria-expanded="false">СИЛКО <span class="caret right"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Ссылка 1</a></li>
+                                <li><a href="#">Ссылка 2</a></li>                          
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+                            aria-haspopup="true" aria-expanded="false">ИНТЕРНЕТ-МАГАЗИН <span class="caret right"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Ссылка 1</a></li>
+                                <li><a href="#">Ссылка 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+                            aria-haspopup="true" aria-expanded="false">ВОПРОСЫ-ОТВЕТЫ <span class="caret right"></span></a>
+                            <ul class="dropdown-menu">
+                                  <li><a href="#">Ссылка 1</a></li>
+                                  <li><a href="#">Ссылка 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+                            aria-haspopup="true" aria-expanded="false">КОНТАКТЫ <span class="caret right"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Ссылка 1</a></li>
+                                <li><a href="#">Ссылка 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul id="shopping_cart" class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">КОРЗИНА</a>
+                        </li>
+                    </ul>
+                </div> <!-- /.navbar-collapse -->
+            </div> <!-- /.container-fluid -->
+        </nav> <!-- end of navbar -->
+        <div class="row">
+            <div class="col-md-7">
+                <h2>ОРГАНИЧЕСКОЕ<br> НАНО-УДОБНИЕ<br> ДОБРИВО</h2>
+            </div>
+            <div id="profit_calculator" class="col-md-5">                
+                <div class="text-center">
+                    <h3>ПОСЧИТАЙТЕ ПРИБЫЛЬ</h3>
+                    <mark>ДОБРИВО ЭФФЕКТИВНЕЕ ХИМИИ</mark>
+                    <hr>
+                </div>
+                <form role="form" name="profit-calculator" method="post" onsubmit="return profitCalculator();">
+                    <div class=form-group>
+                        <label for="grains">Выберите культуру</label>
+                        <select id="grains" class="form-control">
+                            <option value="3100">Пшеница ≈ 3100 грн/т</option>
+                            <option value="5000">Кукуруза ≈ 5000 грн/т</option>
+                            <option value="4000">Рожь ≈ 4000 грн/т</option>
+                            <option value="3500">Ячмень ≈ 3500 грн/т</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="produce">Урожайность, ц/га</label>
+                        <input id="produce" class="form-control" name="produce" type="number" placeholder="20" min="0" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <label for="fertilizer_price">Стоимость хим. удобрения, грн/га</label>
+                        <input id="fertilizer_price" class="form-control" type="number" name="price" placeholder="3000" min="0" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <label for="area">Посевная площадь, га</label>
+                        <input id="area" class="form-control" type="number" placeholder="10" min="0" step="0.1">
+                    </div>
+                    <div class="text-center">
+                        <hr>
+                        <input id="form_submit" type="submit" value="ПРИБЫЛЬ ОТ ДОБРИВА">                    
+                        <p id="answer"></p>
+                    </div>
+                </form>   
+            </div>
+        </div>
+    </div> <!-- end of .container -->
+</body>
+</html>

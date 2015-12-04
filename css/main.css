@@ -1,0 +1,113 @@
+* {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+h1 {
+    font-size: 4.21em;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+.caret.right {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid;
+}
+
+.container {
+    width: 1200px;
+}
+
+.form-control {
+    border-radius: 2px;
+}
+
+.slideshow {
+    position: relative;    
+}
+
+.slideshow img {
+    position: absolute;
+    z-index: -3;
+}
+
+.submenu {
+    padding-right: 34px;
+}
+
+.submenu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-top: 75px;
+}
+
+.submenu ul li {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.submenu ul li:last-child {
+    padding-right: 0px;
+} 
+
+
+.submenu ul li, #langswitch {
+    font-size: 0.875em;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+#background {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#main_container {
+    padding: 0px 120px 0px 80px;
+}
+
+#langswitch, #profit_calculator {
+    float: right;
+}
+
+#lang {
+    padding-left: 0px;
+    margin-top: 75px;
+}
+
+#profit_calculator {
+    width: 296px;
+    height: 571px;
+    border: 1px dashed #A7A9AC;    
+    border-radius: 0.3em;
+    position: relative;
+    background: white;
+    margin-right: 27px;
+    margin-top: 50px;
+}
+
+#profit_calculator:after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    background: #E9E5E4;
+    z-index: -1;
+}
+
+#form_submit {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#navbar_main {
+    max-width: 1000px;
+    font-size: 1em;
+}
